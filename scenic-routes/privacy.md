@@ -1,6 +1,6 @@
 # Scenic Routes — Privacy Policy
 
-Effective date: 10 November 2026
+Effective date: 11 November 2026
 
 This policy covers the Scenic Routes app for iOS and Android ("the app"). The app is made by
 Michal Kovařík, an individual developer, who is the data controller under the GDPR.
@@ -36,17 +36,20 @@ permission at any time in your device settings.
 The map, the routes and the places are bundled with the app. To show live data and media, the
 app downloads public files directly from:
 
-- **Statens vegvesen** (vegvesen.no): whether mountain passes, bridges and tunnels are open,
-  and roadside webcam images
-- **Nasjonale turistveger** (nasjonaleturistveger.no): winter closure status and photos
+- **The Scenic Routes server**: which roads are closed or regulated right now. The server gathers
+  this from Statens vegvesen's public traffic information for every user at once; the app's request
+  carries nothing about you or your location.
+- **Statens vegvesen** (vegvesen.no): roadside webcam images
+- **Nasjonale turistveger** (nasjonaleturistveger.no): photos
 - **Wikimedia** (wikimedia.org): photos
 - **Mapillary**, a Meta company (mapillary.com): street-level photos near the place or route
   you are viewing. The request contains the coordinates of that place, never your own location.
 - **Vimeo** (vimeo.com): films about a place, loaded in Vimeo's own player when you open one
 - **stavechurch.com**: visitor information for stave churches
-- **Esri** (arcgisonline.com): satellite imagery, only while that map option is on
+- **Esri** (arcgisonline.com): satellite imagery, only while that map option is on or a 3D
+  route preview is playing
 - **Amazon Web Services** (s3.amazonaws.com): public elevation data, only while 3D terrain or
-  hillshading is on
+  hillshading is on or a 3D route preview is playing
 - **Expo** (expo.dev): a check for app updates at launch. The request contains the app
   version, your platform and a random identifier of this installation, which is not linked to
   you.
