@@ -1,6 +1,6 @@
 # Scenic Routes — Privacy Policy
 
-Effective date: 11 November 2026
+Effective date: 14 November 2026
 
 This policy covers the Scenic Routes app for iOS and Android ("the app"). The app is made by
 Michal Kovařík, an individual developer, who is the data controller under the GDPR.
@@ -10,7 +10,6 @@ Contact: kenr.mk@gmail.com
 ## Summary
 
 - There are no accounts and no sign-up.
-- I don't run a server that receives data about you.
 - There is no analytics, advertising or crash-reporting software in the app.
 - Your location and your visited places stay on your device.
 
@@ -18,10 +17,11 @@ Contact: kenr.mk@gmail.com
 
 - Your settings: theme, map options and which map layers are shown.
 - The routes and places you marked as visited.
+- Optional offline map downloads and their versions, and the most recently fetched webcam status.
 
-This data never leaves your device unless you export it yourself: the Export button in Settings
-writes your visited list to a file and hands it to the share sheet, and you choose where it goes.
-The data is deleted when you uninstall the app.
+The app keeps these settings and records on your device. The Export button in Settings writes
+your visited list to a file and lets you choose where to share it. Uninstalling the app clears
+these settings, records and downloads.
 
 ## Location
 
@@ -33,13 +33,16 @@ permission at any time in your device settings.
 
 ## Servers the app contacts
 
-The map, the routes and the places are bundled with the app. To show live data and media, the
-app downloads public files directly from:
+The app bundles its base map, routes and many places. To show additional layers, live data and
+media, it downloads public files directly from:
 
-- **The Scenic Routes server**: which roads are closed or regulated right now. The server gathers
-  this from Statens vegvesen's public traffic information for every user at once; the app's request
-  carries nothing about you or your location.
-- **Statens vegvesen** (vegvesen.no): roadside webcam images
+- **The Scenic Routes server**: road closures, nationwide weather observations and webcam status
+  gathered from Statens vegvesen, webcam map tiles, plus OpenStreetMap tiles for tunnels, drinking
+  water, dump stations and lighthouses. Streaming tile requests reveal the area of the map you are viewing. An offline
+  download requests all of these tiles for the country you select. The app checks your network
+  type on the device so existing downloads update only on Wi-Fi. Weather requests contain no
+  station ID, viewed place or device location; webcam status requests contain no camera ID or location.
+- **Statens vegvesen** (vegvesen.no): roadside webcam images and video streams
 - **Nasjonale turistveger** (nasjonaleturistveger.no): photos
 - **Wikimedia** (wikimedia.org): photos
 - **Mapillary**, a Meta company (mapillary.com): street-level photos near the place or route
@@ -61,15 +64,14 @@ policies apply.
 
 ## How long data is kept
 
-I hold no data about you, so there is nothing for me to keep or delete. Data on your device is
-kept until you uninstall the app or clear its data.
+The Scenic Routes server uses network request data to deliver the files described above.
+Data on your device is kept until you delete it, uninstall the app or clear its data.
 
 ## Your rights
 
 Under the GDPR and similar laws, you have the right to access, correct, delete, restrict or port
 your personal data, to object to its processing, and to complain to your national data
-protection authority. I hold no personal data about you. You can stop all data collection by the
-app by uninstalling it. For any question, contact me at the address above.
+protection authority. For any question or request, contact me at the address above.
 
 ## Children
 
