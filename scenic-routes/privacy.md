@@ -1,6 +1,6 @@
 # Scenic Routes — Privacy Policy
 
-Effective date: 14 November 2026
+Effective date: 16 November 2026
 
 This policy covers the Scenic Routes app for iOS and Android ("the app"). The app is made by
 Michal Kovařík, an individual developer, who is the data controller under the GDPR.
@@ -45,6 +45,9 @@ media, it downloads public files directly from:
 - **Statens vegvesen** (vegvesen.no): roadside webcam images and video streams
 - **Nasjonale turistveger** (nasjonaleturistveger.no): photos
 - **Wikimedia** (wikimedia.org): photos
+- **Norwegian tourism boards** (visitnorway.com, fjordnorway.com and regional boards): waterfall
+  photos, served from their image hosts (cdn.sanity.io, res.cloudinary.com, newmindmedia.com,
+  citybreak.com, visithelgeland.com, visitbodo.com)
 - **Mapillary**, a Meta company (mapillary.com): street-level photos near the place or route
   you are viewing. The request contains the coordinates of that place, never your own location.
 - **Vimeo** (vimeo.com): films about a place, loaded in Vimeo's own player when you open one
