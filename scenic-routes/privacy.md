@@ -1,6 +1,6 @@
 # Scenic Routes — Privacy Policy
 
-Effective date: 16 November 2026
+Effective date: 17 November 2026
 
 This policy covers the Scenic Routes app for iOS and Android ("the app"). The app is made by
 Michal Kovařík, an individual developer, who is the data controller under the GDPR.
@@ -17,7 +17,8 @@ Contact: kenr.mk@gmail.com
 
 - Your settings: theme, map options and which map layers are shown.
 - The routes and places you marked as visited.
-- Optional offline map downloads and their versions, and the most recently fetched webcam status.
+- Optional offline map downloads and their versions, and the most recently fetched webcam status
+  and toll information.
 
 The app keeps these settings and records on your device. The Export button in Settings writes
 your visited list to a file and lets you choose where to share it. Uninstalling the app clears
@@ -36,14 +37,17 @@ permission at any time in your device settings.
 The app bundles its base map, routes and many places. To show additional layers, live data and
 media, it downloads public files directly from:
 
-- **The Scenic Routes server**: road closures, nationwide weather observations and webcam status
-  gathered from Statens vegvesen, webcam map tiles, plus OpenStreetMap tiles for tunnels, drinking
+- **The Scenic Routes server**: road closures, nationwide weather observations, webcam status and
+  toll information gathered from Statens vegvesen, webcam and toll-road map tiles, plus OpenStreetMap tiles for tunnels, drinking
   water, dump stations and lighthouses. Streaming tile requests reveal the area of the map you are viewing. An offline
   download requests all of these tiles for the country you select. The app checks your network
   type on the device so existing downloads update only on Wi-Fi. Weather requests contain no
-  station ID, viewed place or device location; webcam status requests contain no camera ID or location.
+  station ID, viewed place or device location. Webcam status requests contain no camera ID or location.
+  The toll snapshot request covers all routes and contains no route ID or location.
 - **Statens vegvesen** (vegvesen.no): roadside webcam images and video streams
 - **Nasjonale turistveger** (nasjonaleturistveger.no): photos
+- **Norges nasjonalparker** (norgesnasjonalparker.no): photos of national parks, protected areas
+  and visitor centres
 - **Wikimedia** (wikimedia.org): photos
 - **Norwegian tourism boards** (visitnorway.com, fjordnorway.com and regional boards): waterfall
   photos, served from their image hosts (cdn.sanity.io, res.cloudinary.com, newmindmedia.com,
@@ -54,6 +58,8 @@ media, it downloads public files directly from:
 - **stavechurch.com**: visitor information for stave churches
 - **Esri** (arcgisonline.com): satellite imagery, only while that map option is on or a 3D
   route preview is playing
+- **OpenFreeMap** (openfreemap.org): a more detailed online base map, only while that map
+  option is on
 - **Amazon Web Services** (s3.amazonaws.com): public elevation data, only while 3D terrain or
   hillshading is on or a 3D route preview is playing
 - **Expo** (expo.dev): a check for app updates at launch. The request contains the app
