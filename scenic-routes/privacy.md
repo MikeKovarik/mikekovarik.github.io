@@ -1,6 +1,6 @@
 # Scenic Routes — Privacy Policy
 
-Effective date: 17 November 2026
+Effective date: 18 November 2026
 
 This policy covers the Scenic Routes app for iOS and Android ("the app"). The app is made by
 Michal Kovařík, an individual developer, who is the data controller under the GDPR.
@@ -17,8 +17,9 @@ Contact: kenr.mk@gmail.com
 
 - Your settings: theme, map options and which map layers are shown.
 - The routes and places you marked as visited.
-- Optional offline map downloads and their versions, and the most recently fetched webcam status
-  and toll information.
+- Optional offline map downloads and their versions, including place details and one photo per
+  place, and the most recently fetched webcam status and toll information.
+- Place details (descriptions and photo lists) the app downloaded, kept so they read offline.
 
 The app keeps these settings and records on your device. The Export button in Settings writes
 your visited list to a file and lets you choose where to share it. Uninstalling the app clears
@@ -44,7 +45,16 @@ media, it downloads public files directly from:
   type on the device so existing downloads update only on Wi-Fi. Weather requests contain no
   station ID, viewed place or device location. Webcam status requests contain no camera ID or location.
   The toll snapshot request covers all routes and contains no route ID or location.
+  It also serves place descriptions and photo lists for the kinds of places whose details the app
+  does not bundle, and a list of one photo per place. These files are fetched one kind of place at
+  a time, in the background on Wi-Fi or when you open a place whose details are missing. A request
+  names only a kind of place, never the place you are viewing. An offline download includes these
+  files and one photo per place, which the app then requests from the photo hosts listed below.
 - **Statens vegvesen** (vegvesen.no): roadside webcam images and video streams
+  and, in development and preview builds, nationwide road closure messages, geometry and
+  stretch status (`traffic-info.atlas.vegvesen.no` and `fjelloverganger-backend.atlas.vegvesen.no`).
+  Those builds keep the last download on the device and request updates after you enable the layer
+  or use the update button. Those requests cover all of Norway and contain no device location.
 - **Nasjonale turistveger** (nasjonaleturistveger.no): photos
 - **Norges nasjonalparker** (norgesnasjonalparker.no): photos of national parks, protected areas
   and visitor centres
